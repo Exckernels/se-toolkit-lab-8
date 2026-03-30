@@ -211,7 +211,11 @@ Using config: /app/nanobot/config.resolved.json
 
 ## Task 2B — Web client
 
-<!-- Screenshot of a conversation with the agent in the Flutter web app -->
+Screenshot of a conversation with the agent in the Flutter web app:
+
+![Web client screenshot](docs/ds.jpg)
+![Web client screenshot](docs/sd.jpg)
+
 
 ## Task 3A — Structured logging
 

@@ -11,6 +11,7 @@ WORKDIR /app
 COPY --from=workspace pyproject.toml uv.lock /app/
 COPY --from=workspace mcp /app/mcp
 COPY . /app/nanobot
+COPY --from=nanobot_websocket_channel / /app/nanobot-websocket-channel
 
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync --frozen --package nanobot

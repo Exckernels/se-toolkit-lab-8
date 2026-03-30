@@ -2,7 +2,7 @@
   "agents": {
     "defaults": {
       "workspace": "~/.nanobot/workspace",
-      "model": "openrouter/free",
+      "model": "openrouter/auto",
       "provider": "openai",
       "maxTokens": 8192,
       "contextWindowTokens": 65536,
@@ -16,6 +16,10 @@
     "sendProgress": true,
     "sendToolHints": false,
     "sendMaxRetries": 3,
+"webchat": {
+  "enabled": true,
+  "allowFrom": ["*"]
+},
     "dingtalk": {
       "enabled": false,
       "clientId": "",
