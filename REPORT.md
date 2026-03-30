@@ -219,11 +219,31 @@ Screenshot of a conversation with the agent in the Flutter web app:
 
 ## Task 3A — Structured logging
 
-<!-- Paste happy-path and error-path log excerpts, VictoriaLogs query screenshot -->
+### Successful request
+request_started
+auth_success
+db_query
+request_completed
+GET /items/ HTTP/1.1 200 OK
+
+### Error request
+ERROR [app.db.items] - db_query
+request_completed
+GET /items/ HTTP/1.1 404 Not Found
+
+### VictoriaLogs screenshot
+![Web client screenshot](docs/ts.jpg)
+![Web client screenshot](docs/vs.jpg)
 
 ## Task 3B — Traces
 
 <!-- Screenshots: healthy trace span hierarchy, error trace -->
+
+Healthy Trace
+![Web client screenshot](docs/hea.jps)
+ 
+Error Trace
+![Web client screenshot](docs/err.jpg)
 
 ## Task 3C — Observability MCP tools
 
